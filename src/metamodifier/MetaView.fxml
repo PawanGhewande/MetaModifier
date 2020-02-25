@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metamodifier.MetaViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="570.0" layoutX="315.0" layoutY="5.0" stroke="#d0d0d0" strokeType="INSIDE" width="520.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="88.0" layoutX="337.0" layoutY="247.0" stroke="#e8e8e8" strokeType="INSIDE" width="483.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="88.0" layoutX="337.0" layoutY="358.0" stroke="#e8e8e8" strokeType="INSIDE" width="483.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" layoutX="345.0" layoutY="345.0" stroke="#e8e8e8" strokeType="INSIDE" width="139.0" />
+      <JFXTextField fx:id="path" layoutX="6.0" layoutY="15.0" prefHeight="26.0" prefWidth="205.0" promptText="Select Folder" />
+      <JFXDatePicker fx:id="createDate" defaultColor="#0d47a1" layoutX="391.0" layoutY="279.0" prefHeight="26.0" prefWidth="192.0" promptText="Select Created Date" />
+      <JFXTimePicker fx:id="createTime" defaultColor="#0d47a1" layoutX="608.0" layoutY="279.0" prefHeight="26.0" prefWidth="151.0" promptText="Select Time" />
+      <JFXButton buttonType="RAISED" layoutX="607.0" layoutY="473.0" onAction="#change" prefHeight="41.0" prefWidth="116.0" style="-fx-background-color: #0d47a1;" text="CHANGE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="219.0" layoutY="8.0" onAction="#loadFrom" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #FF8800;" text="Browse" textFill="WHITE" />
+      <JFXListView fx:id="listFiles" layoutX="6.0" layoutY="48.0" prefHeight="527.0" prefWidth="303.0" showTooltip="true" />
+      <JFXTextField fx:id="created" disable="true" layoutX="488.0" layoutY="48.0" prefHeight="26.0" prefWidth="235.0" promptText="Created Date" />
+      <JFXTextField fx:id="modified" disable="true" layoutX="488.0" layoutY="98.0" prefHeight="26.0" prefWidth="235.0" promptText="Modified Date" />
+      <JFXTextField fx:id="accessed" disable="true" layoutX="488.0" layoutY="147.0" prefHeight="26.0" prefWidth="235.0" promptText="Accessed Date" />
+      <JFXDatePicker fx:id="modifiedDate" defaultColor="#0d47a1" layoutX="401.0" layoutY="382.0" prefHeight="26.0" prefWidth="192.0" promptText="Select Modified Date" />
+      <JFXTimePicker fx:id="modifiedTime" defaultColor="#0d47a1" layoutX="618.0" layoutY="382.0" prefHeight="26.0" prefWidth="151.0" promptText="Select Time" />
+      <JFXButton buttonType="RAISED" layoutX="437.0" layoutY="473.0" onAction="#next" prefHeight="41.0" prefWidth="116.0" style="-fx-background-color: #0099CC;" text="NEXT" textFill="WHITE" />
+      <JFXCheckBox fx:id="random" checkedColor="#0d47a1" layoutX="522.0" layoutY="204.0" text="Ramdom" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" layoutX="345.0" layoutY="234.0" stroke="#e8e8e8" strokeType="INSIDE" width="139.0" />
+      <Label layoutX="360.0" layoutY="53.0" prefHeight="18.0" prefWidth="116.0" text="Created Date :" />
+      <Label layoutX="360.0" layoutY="102.0" prefHeight="18.0" prefWidth="116.0" text="Modified Date :" />
+      <Label layoutX="360.0" layoutY="151.0" prefHeight="18.0" prefWidth="116.0" text="Accessed Date :" />
+      <Label layoutX="362.0" layoutY="238.0" prefHeight="18.0" prefWidth="116.0" text="Created Date" />
+      <Label layoutX="360.0" layoutY="349.0" prefHeight="18.0" prefWidth="106.0" text="Modified Date " />
+   </children>
+</AnchorPane>
